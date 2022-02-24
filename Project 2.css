@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to left, rgb(40, 40, 40), rgb(40, 40, 40));
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.topbar {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.topbar ul {
+    overflow: auto;
+}
+
+.topbar li {
+    float: left;
+    padding: 13px 20px;
+    list-style-type: none;
+}
+
+.topbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.topbar li a:hover {
+    color: burlywood;
+}
+
+.search {
+    color: white;
+    float: right;
+    padding: 13px 45px;
+}
+
+.topbar input {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+#loginin {
+    float: right;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+#signup {
+    float: right;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+/*.letside-bar {
+    float: left;
+}*/
+
+.fontsize {
+    text-transform: uppercase;
+    font-size: 75px;
+    margin: 38px 90px
+}
+
+.rightside-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 15px;
+    width: 60%;
+    color: black;
+
+}
+
+#result {
+    align-items: center;
+    display: block;
+}
+
+.btn {
+    width: 50%;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+}
+.song-list li span {
+    background-color: #9E2092;
+    border: 0;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+.song-list li {
+    align-items: center;
+} 
+
+.song-list li div {
+    padding: 10px;
+    font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+    .fontsize {
+        font-size: 50px;
+    }
+    #result {
+        text-align: center;
+    }
+    #search {
+        align-items: center;
+    }
+    .btn {
+        align-items: center;
+    }
+}
